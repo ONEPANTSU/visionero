@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+    <title>Simple page</title>
+</head>
+<body>
+    <h1>VISIONERO</h1>
+    <script>
+        let ws = new WebSocket("ws://{{ app.host }}:{{ app.port }}/");
+        ws.onmessage = function(message) {
+            alert(message.data);
+        };
+    </script>
+</body>
+</html>
