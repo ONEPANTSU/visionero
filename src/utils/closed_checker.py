@@ -1,5 +1,4 @@
 import threading
-import time
 
 alert_messages = list()
 
