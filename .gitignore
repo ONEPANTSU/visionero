@@ -1,3 +1,5 @@
 /.env
 /venv
 /visionero.log
+/run.dist/
+/run.build/

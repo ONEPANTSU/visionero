@@ -3,7 +3,7 @@ import datetime
 from sqlalchemy import insert, select
 from sqlalchemy.exc import IntegrityError
 
-from database.database import session_maker
+from src.database import session_maker
 from src.models import ProgramHistory
 
 
