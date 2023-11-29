@@ -50,10 +50,6 @@ class ProgramInfo:
     @staticmethod
     def is_program_running(program_name):
         for process in psutil.process_iter():
-            if program_name.lower().startswith(
-                "the"
-            ) and process.name().lower().startswith("the"):
-                print(program_name.lower(), process.name())
             if process.name().lower() == f"{program_name.lower()}.exe":
                 return True
         return False
